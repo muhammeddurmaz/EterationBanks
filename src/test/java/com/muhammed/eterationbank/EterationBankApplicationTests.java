@@ -1,10 +1,10 @@
-package com.muhammed.eterationbanks;
+package com.muhammed.eterationbank;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EterationBanksApplicationTests {
+class EterationBankApplicationTests {
 
     @Test
     void contextLoads() {
