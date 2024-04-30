@@ -27,6 +27,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public BankAccountDTO getAccountByAccountNumber(String number) {
+        
         return accountRepository.findBankAccountByAccountNumber(number)
                 .map(accountMapper::toDto)
                 .orElseThrow(()-> new AccountNotFound("Account could not found by account number " + number));
